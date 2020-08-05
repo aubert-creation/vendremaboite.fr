@@ -6,6 +6,7 @@ const optimizedImages = require('next-optimized-images');
 
 module.exports = withPlugins([
     [optimizedImages, {
+        distDir: 'build',
         inlineImageLimit: 8192,
         imagesFolder: 'images',
         imagesName: '[name]-[hash].[ext]',
@@ -29,5 +30,5 @@ module.exports = withPlugins([
         },
     }],
     [withCSS], [withFonts], [withSass]
-   
-]);
+
+])
