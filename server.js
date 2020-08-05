@@ -54,7 +54,7 @@ app.prepare().then(() => {
       var sender = req.body.sender;
       var branch = req.body.ref;
 
-      if (branch.indexOf("master") > -1) {
+      if (branch.indexOf("master") > -1 && sender.login === "aubert-creation") {
         execute([script, '>>', log, '2>&1'].join(' '));
         res.writeHead(200);
         return res.end('Okay');
