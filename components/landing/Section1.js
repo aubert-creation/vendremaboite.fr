@@ -8,7 +8,7 @@ const Section1 = (props) => {
         <div className="container">
           <div className="row m-t-40">
             <div className="col-md-12 m-t-60 m-b-30">
-              <h2><span>Plus</span> rapide... <span>Plus</span> facile !</h2>
+              <h2><span>Plus</span> rapide... <span>Plus</span> facile</h2>
               <div className="col-md-6 m-b-50">
                 <p>Parce qu’entreprendre  la  vente  d’une  affaire,  d’un  commerce,  d’une grande entreprise ou encore d’un bâtiment est un process complexe  et  singulier,  nous  souhaitons  vous  apporter  des  solutions innovantes et un suivi ultra personnalisé...</p>
               </div>
