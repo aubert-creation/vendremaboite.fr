@@ -109,30 +109,20 @@ export default class Footer extends React.Component {
                                         <Link href="#"><a>06 69 50 86 13</a></Link>
                                     </li>
                                 </ul>
-                                {/*<ul className="social-links">
+                                <ul className="social-links">
                                     <li>
-                                        <Link href="#">
+                                        <Link href="https://www.facebook.com/hermann.nobilet">
                                             <a className="facebook">
                                                 <Icon.Facebook />
                                             </a>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
-                                            <a className="twitter"><Icon.Twitter /></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">
-                                            <a className="instagram"><Icon.Instagram /></a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">
+                                        <Link href="https://www.linkedin.com/in/hermann-nobilet-975149bb/">
                                             <a className="linkedin"><Icon.Linkedin /></a>
                                         </Link>
                                     </li>
-                                </ul>*/}
+                                </ul>
                             </div>
                         </div>
 
