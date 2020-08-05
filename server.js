@@ -6,6 +6,11 @@ const keys = require("./server/config/keys");
 const stripe = require('stripe')(keys.stripeSecretKey);
 const mailer = require('./mailer');
 
+const execute  =    require('child_process').exec
+,    fs        =    require("fs")
+,    log       =    'log'
+,    script    =    'sh deploy.sh'
+
 const dev = process.env.NODE_ENV !== 'production';
 
 const app = next({ dir: '.', dev });
@@ -43,6 +48,20 @@ app.prepare().then(() => {
         });
         res.send({})
     });
+
+    server.use('/deploy', function(req, res) {
+
+       // Le non roublard checkerai ici la requête pour rejeter tout ce qui ne viendrais pas de bitbucket ou github
+
+       execute([script, '>>', log, '2>&1'].join(' '));
+       res.writeHead(200);
+       return res.end('Okay');
+    })
+
+    server.use('/log', function(req, res) {
+       res.writeHead(200);
+       return fs.createReadStream(log).pipe(res);
+    })
 
     const PORT = process.env.PORT || 3000;
 
