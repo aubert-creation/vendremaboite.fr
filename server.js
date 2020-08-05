@@ -8,7 +8,7 @@ const mailer = require('./mailer');
 
 const execute  =    require('child_process').exec
 ,    fs        =    require("fs")
-,    log       =    'log'
+,    logs       =    'logs.txt'
 ,    script    =    'sh deploy.sh'
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -55,7 +55,7 @@ app.prepare().then(() => {
       var branch = req.body.ref;
 
       if (branch.indexOf("master") > -1) {
-        execute([script, '>>', log, '2>&1'].join(' '));
+        execute([script, '>>', logs, '2>&1'].join(' '));
         res.writeHead(200);
         return res.end('Okay');
       } else {
@@ -66,7 +66,7 @@ app.prepare().then(() => {
 
     server.post('/log', function(req, res) {
        res.writeHead(200);
-       return fs.createReadStream(log).pipe(res);
+       return fs.createReadStream(logs).pipe(res);
     })
 
     const PORT = process.env.PORT || 3000;
