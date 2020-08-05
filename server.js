@@ -49,16 +49,22 @@ app.prepare().then(() => {
         res.send({})
     });
 
-    server.use('/deploy', function(req, res) {
+    server.post('/deploy', function(req, res) {
+      // Le non roublard checkerai ici la requête pour rejeter tout ce qui ne viendrais pas de bitbucket ou github
+      var sender = req.body.sender;
+      var branch = req.body.ref;
 
-       // Le non roublard checkerai ici la requête pour rejeter tout ce qui ne viendrais pas de bitbucket ou github
-
-       execute([script, '>>', log, '2>&1'].join(' '));
-       res.writeHead(200);
-       return res.end('Okay');
+      if (branch.indexOf("master") > -1 && sender.login === githubUsername) {
+        execute([script, '>>', log, '2>&1'].join(' '));
+        res.writeHead(200);
+        return res.end('Okay');
+      } else {
+        res.writeHead(401);
+        return res.end('NO');
+      }
     })
 
-    server.use('/log', function(req, res) {
+    server.post('/log', function(req, res) {
        res.writeHead(200);
        return fs.createReadStream(log).pipe(res);
     })
