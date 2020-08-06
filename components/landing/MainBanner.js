@@ -14,18 +14,18 @@ const MainBanner = () => {
                 <div className="hero-content">
                   <div className="hero-content-title">
                     <h1>
-                      Vendre{" "}
+                      <span className="pre-title">Vendre{" "}</span>
                       <TextLoop interval={3000}>
-                        <span>sa boite</span>
-                        <span>son entreprise</span>
-                        <span>son commerce</span>
-                        <span>son local</span>
-                        <span>son business</span>
+                        <span className="opt-title">sa boite</span>
+                        <span className="opt-title">son entreprise</span>
+                        <span className="opt-title">son commerce</span>
+                        <span className="opt-title">son local</span>
+                        <span className="opt-title">son business</span>
                       </TextLoop>
                     </h1>
                   </div>
-                  <h3>n'aura jamais été aussi simple et rapide</h3>
-                  <span>Proche de vous | Sur mesure</span>
+                  <h3>n'aura jamais été aussi simple</h3>
+                  <span className="sub-title">Proche de vous | Sur mesure</span>
                 </div>
               </div>
 

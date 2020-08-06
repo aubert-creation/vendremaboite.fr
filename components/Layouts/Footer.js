@@ -98,7 +98,7 @@ export default class Footer extends React.Component {
                                 <ul className="footer-contact-info">
                                     <li>
                                         <Icon.MapPin />
-                                        22 Quai Amiral Hamelin 14000 CAEN
+                                        142 rue Saint-Jean 14000 CAEN
                                     </li>
                                     <li>
                                         <Icon.Mail />
@@ -106,7 +106,7 @@ export default class Footer extends React.Component {
                                     </li>
                                     <li>
                                         <Icon.PhoneCall />
-                                        <Link href="#"><a>06 69 50 86 13</a></Link>
+                                        <Link href="#"><a>06 49 52 96 29</a></Link>
                                     </li>
                                 </ul>
                                 <ul className="social-links">
