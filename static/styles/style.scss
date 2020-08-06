@@ -51,7 +51,22 @@ Default CSS
 =================================================*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-$font-family: 'Poppins', sans-serif;
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/Gotham-Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../fonts/Gotham-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family: 'Gotham-Book', 'Poppins', sans-serif;
+$font-family-title: 'Gotham-Medium', 'Poppins', sans-serif;
 $light-green-color: #44ce6f;
 $white-color: #ffffff;
 $black-color: #0e314c;
@@ -64,12 +79,16 @@ $bg-color4: #0f054b;
 $hosting-main-color: #032b8d;
 $gradient-color: linear-gradient(135deg, #294568 0%, #14768d 100%);
 $gradient-color2: linear-gradient(to right, #294568, 65%, #14768d);
+$gradient-color-webkit: -webkit-linear-gradient(135deg, #294568 0%, #14768d 100%);
+
 $transition: .5s;
 $font-size: 14px;
 
 $primary-color: #294568;
 $primary-color-bg: #294568;
 
+$title-blue-color: #294568;
+$text-blue-color: #294568;
 
 body {
     font-family: $font-family;
@@ -89,6 +108,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 a {
     color: $black-color;
     display: inline-block;
@@ -604,22 +624,28 @@ Main Banner CSS
         }
 
         h3 {
-          font-weight: 300;
+          font-family: $font-family-title;
+          font-weight: bold;
           font-size: 2rem;
           margin-bottom: 15px;
         }
 
-        span {
+        .sub-title {
           font-size: 1.6rem;
-          font-weight: 300;
         }
 
         .hero-content-title {
           h1 {
             color: #fff;
             margin-bottom: 5px;
+            font-size: 3rem;
 
-            span {
+            .pre-title {
+              font-family: $font-family-title;
+              font-weight: bold;
+            }
+
+            .opt-title {
               font-size: 3rem;
               font-weight: normal;
             }
@@ -677,7 +703,11 @@ Section1 CSS
       margin: 50px 0;
 
       h2 {
-        color: $primary-color;
+        font-size: 72px;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $title-blue-color;
 
         span {
           font-size: 46px;
@@ -695,9 +725,11 @@ Section1 CSS
         }
 
         p {
-          font-size: 1rem;
-          text-align: center;
+          font-size: 1.2rem;
+          text-align: justify;
+          text-align-last: center;
           line-height: 1.5;
+          color: $text-blue-color;
         }
       }
     }
