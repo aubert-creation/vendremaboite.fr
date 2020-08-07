@@ -2,7 +2,7 @@ import React from 'react'
 import ReactWOW from 'react-wow'
 import * as Icon from 'react-feather';
 
-const Section1 = (props) => {
+const Section1 = () => {
     return (
       <section className="section1">
         <div className="container">
