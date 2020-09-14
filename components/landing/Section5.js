@@ -10,7 +10,7 @@ const Section5 = (props) => {
             <div className="col-md-6 vmb-image-wrapper">
               <ReactWOW delay='0.5s' animation='fadeIn'>
                 <img
-                    src={require('../../static/images/section2/accompagner.png')}
+                    src={require('../../static/images/section5/commerce.png')}
                     className="section-image"
                     alt="man"
                 />
@@ -18,15 +18,12 @@ const Section5 = (props) => {
             </div>
             <div className="col-md-6 vmb-body">
               <div className="vmb-slide">
-                <h3><span>Notre expertise</span> sur mesure pour</h3>
+                <h2><span>Notre expertise</span> au service de</h2>
                 <div className="col-md-12">
-                  <h4>Votre commerce</h4>
+                  <h4><span>></span>Votre commerce</h4>
                   <p>La vente d’un commerce est singulière. Elle dépend de multiples facteurs. Votre commerce est l’oeuvre d’une vie. Vous la connaissez mieux que personne. Faire en sorte qu’il parte entre bonne main et rapidement, c’est notre mission.</p>
                 </div>
               </div>
-
-
-
             </div>
           </div>
         </div>
