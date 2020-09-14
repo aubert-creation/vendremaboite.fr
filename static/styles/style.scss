@@ -889,6 +889,8 @@ Section1 CSS
 
 .section3 {
   padding: 20px 0px;
+  margin-bottom: 80px;
+
   .container {
     .row {
       justify-content: center;
@@ -933,14 +935,14 @@ Section1 CSS
           position: absolute;
 
           &.vmb-step1 {
-            top: 100px;
-            left: 10%;
+            top: 0px;
+            left: 8%;
           }
 
           &.vmb-step2 {
             flex-direction: column-reverse;
-            bottom: -35px;
-            left: 35%;
+            bottom: -100px;
+            left: 34%;
 
             .vmb-step-info {
               margin-top: 10px;
@@ -953,14 +955,14 @@ Section1 CSS
           }
 
           &.vmb-step3 {
-            top: 15px;
-            left: 53.5%;
+            top: -75px;
+            left: 52.5%;
           }
 
           &.vmb-step4 {
             flex-direction: column-reverse;
-            bottom: 10px;
-            right: 0%;
+            bottom: -90px;
+            right: -2%;
 
             .vmb-step-info {
               margin-top: 10px;
