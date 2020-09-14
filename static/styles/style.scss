@@ -77,9 +77,8 @@ $bg-color2: #f9f6f6;
 $bg-color3: #f9fafb;
 $bg-color4: #0f054b;
 $hosting-main-color: #032b8d;
-$gradient-color: linear-gradient(135deg, #294568 0%, #14768d 100%);
-$gradient-color2: linear-gradient(to right, #294568, 65%, #14768d);
-$gradient-color-webkit: -webkit-linear-gradient(135deg, #294568 0%, #14768d 100%);
+$gradient-color: linear-gradient(to right, #294B6D, 65%, #1B718A);
+$gradient-color-webkit: -webkit-linear-gradient(0deg, #294B6D 0%, #1B718A 100%);
 
 $transition: .5s;
 $font-size: 14px;
@@ -88,7 +87,7 @@ $primary-color: #294568;
 $primary-color-bg: #294568;
 
 $title-blue-color: #294568;
-$text-blue-color: #294568;
+$text-blue-color: #21516A;
 
 body {
     font-family: $font-family;
@@ -97,12 +96,15 @@ body {
     font-size: $font-size;
 }
 
-.m-t-90 { margin-top: 90px; }
-.m-t-60 { margin-top: 60px; }
+.m-t-20 { margin-top: 20px; }
 .m-t-40 { margin-top: 40px; }
+.m-t-60 { margin-top: 60px; }
+.m-t-90 { margin-top: 90px; }
 
 .m-b-30 { margin-bottom: 30px; }
 .m-b-50 { margin-bottom: 50px; }
+.m-b-60 { margin-bottom: 60px; }
+
 
 img {
     max-width: 100%;
@@ -394,7 +396,7 @@ Navbar CSS
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 
         .startp-nav {
-            background: $gradient-color2 !important;
+            background: $gradient-color !important;
             box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
             animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
             padding: 5px 0;
@@ -595,7 +597,7 @@ Navbar CSS
         padding: 15px 0;
         z-index: 999;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-        background: $gradient-color2 !important;
+        background: $gradient-color !important;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     }
 }
@@ -610,7 +612,7 @@ Main Banner CSS
     height: 100vh;
     z-index: 1;
     //background: transparent url(../images/banner-bg1.jpg) right top no-repeat;
-    background: linear-gradient(to right, #1f4974, 65%, #257e96);
+    background: $gradient-color;
 
     .hero-content {
       color: #fff;
@@ -702,35 +704,117 @@ Section1 CSS
       align-items: center;
       margin: 50px 0;
 
-      h2 {
-        font-size: 72px;
-        background: $gradient-color-webkit;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: $title-blue-color;
-
-        span {
-          font-size: 46px;
-        }
-      }
-      div {
-        align-items: center;
+      .section-header {
         justify-content: center;
+        align-items: center;
         display: flex;
         flex-direction: column;
 
-        img {
-          width: 64px;
-          margin-bottom: 20px;
-        }
+        h2 {
+          font-size: 42px;
+          font-weight: bold;
+          background: $gradient-color-webkit;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: $font-family-title;
 
-        p {
-          font-size: 1.2rem;
-          text-align: justify;
-          text-align-last: center;
-          line-height: 1.5;
-          color: $text-blue-color;
+          span {
+            font-size: 60px;
+          }
         }
+        div {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 1.2rem;
+            text-align: justify;
+            text-align-last: center;
+            line-height: 1.5;
+            color: $text-blue-color;
+
+            span {
+              font-family: $font-family-title;
+            }
+          }
+        }
+      }
+
+      .single-box {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+          padding: 40px 34px;
+          position: relative;
+          z-index: 1;
+          border-radius: 30px;
+          background: $white-color;
+          -webkit-box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
+          box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
+          -webkit-transition: $transition;
+          transition: $transition;
+
+          .icon {
+              display: inline-block;
+              text-align: center;
+              width: 92px;
+              height: 92px;
+              line-height: 55px;
+              color: #fff;
+              -webkit-transition: $transition;
+              transition: $transition;
+          }
+          h3 {
+              font-family: $font-family-title;
+              font-weight: bold;
+              font-size: 56px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              -webkit-transition: $transition;
+              transition: $transition;
+              color: $text-blue-color;
+
+              span {
+                font-size: 28px;
+              }
+          }
+          &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              border-radius: 5px;
+              height: 100%;
+              z-index: -1;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: $transition;
+              transition: $transition;
+          }
+          p {
+              -webkit-transition: $transition;
+              transition: $transition;
+              font-size: 0.9rem;
+              min-height: 80px;
+              text-align: center;
+              line-height: 1.6;
+              margin-top: 10px;
+              color: $text-blue-color;
+          }
+          &:hover {
+              -webkit-transform: translateY(-9px);
+              transform: translateY(-9px);
+              border-color: transparent;
+
+              &::before {
+                  opacity: 1;
+                  visibility: visible;
+              }
+          }
       }
     }
   }
@@ -750,11 +834,16 @@ Section1 CSS
       padding-left: 5%;
 
       h3 {
-        font-size: 38px;
+        font-size: 42px;
         margin-bottom: 30px;
-        color: $primary-color;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font-family-title;
+        font-weight: bold;
+
         span {
-          font-size: 40px;
+          font-size: 60px;
         }
       }
 
@@ -762,22 +851,38 @@ Section1 CSS
         display: flex;
         align-items: center;
         flex-basis: 0;
-        font-size: 22px;
+        font-size: 20px;
         margin: 10px 0;
         padding: 0;
+        color: $text-blue-color;
 
         .section-check {
           width: 32px;
           margin-right: 10px;
         }
+
+        b {
+          font-family: $font-family-title;
+          font-weight: bold;
+        }
       }
     }
 
     .vmb-image-wrapper {
-      padding: 50px;
-      padding-left: 10%;
-      background: linear-gradient(to bottom, #ffffff, 10%, #e3f5f6);
-      border-bottom-left-radius: 60px;
+      padding: 0;
+      background-color: #EBF7F9;
+      border-bottom-left-radius: 40px;
+      border-top-left-radius: 40px;
+      margin-top: 60px;
+
+      .vmb-image {
+        animation-name: fadeInRight;
+        visibility: visible;
+        animation-delay: 0.4s;
+        margin-top: -50px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+      }
     }
   }
 }
@@ -791,12 +896,17 @@ Section1 CSS
       margin: 50px 0;
 
       h2 {
-        color: $primary-color;
+        font-family: $font-family-title;
+        font-weight: bold;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-align: center;
         margin-bottom: 20px;
+        font-size: 42px;
 
         span {
-          font-size: 46px;
+          font-size: 60px;
         }
       }
 
@@ -807,9 +917,92 @@ Section1 CSS
         flex-direction: column;
 
         p {
-          font-size: 1rem;
-          text-align: center;
+          font-size: 1.2rem;
+          text-align: justify;
+          text-align-last: center;
           line-height: 1.5;
+          color: $text-blue-color;
+        }
+      }
+
+      .vmb-image-wrapper {
+        position: relative;
+
+        .vmb-step {
+          width: 250px;
+          position: absolute;
+
+          &.vmb-step1 {
+            top: 100px;
+            left: 10%;
+          }
+
+          &.vmb-step2 {
+            flex-direction: column-reverse;
+            bottom: -35px;
+            left: 35%;
+
+            .vmb-step-info {
+              margin-top: 10px;
+            }
+
+            .vmb-buble-icon {
+              bottom: -35px;
+              width: 60px;
+            }
+          }
+
+          &.vmb-step3 {
+            top: 15px;
+            left: 53.5%;
+          }
+
+          &.vmb-step4 {
+            flex-direction: column-reverse;
+            bottom: 10px;
+            right: 0%;
+
+            .vmb-step-info {
+              margin-top: 10px;
+            }
+
+            .vmb-buble-icon {
+              top: 75px;
+              bottom: -95px;
+              width: 60px;
+            }
+          }
+
+          .vmb-step-title {
+            color: #548292;
+            font-size: 20px;
+          }
+
+          .vmb-step-desc {
+            text-align: center;
+            color: #21516A;
+
+            b {
+              font-family: $font-family-title;
+              font-weight: bold;
+            }
+          }
+
+          .vmb-bubble-wrapper {
+            width: 100px;
+            position: relative;
+            margin-top: 20px;
+
+            .vmb-bubble {
+
+            }
+
+            .vmb-buble-icon {
+              position: absolute;
+              top: 15px;
+              width: 60px;
+            }
+          }
         }
       }
     }
@@ -901,7 +1094,7 @@ Section1 CSS
             h3 {
               transition: all 1s ease 0s;
               bottom: calc(100% - 64px);
-              right: calc(100% - 242px);
+              right: calc(100% - 266px);
               text-shadow: #2f7d96 4px 2px;
             }
 
@@ -925,7 +1118,7 @@ Section1 CSS
             h3 {
               transition: all 1s ease 0s;
               bottom: calc(100% - 64px);
-              left: calc(0% - 20px);
+              left: calc(23% - 20px);
               text-shadow: #2f7d96 4px 2px;
             }
 
@@ -1004,38 +1197,84 @@ Section1 CSS
 
 .section5 {
   margin-top: 80px;
+  margin-bottom: 80px;
 
   .vmb-wrapper {
     display: flex;
 
     .vmb-body {
-      h3 {
-        font-size: 38px;
-        margin-bottom: 30px;
-        color: $primary-color;
+      padding-top: 40px;
+      padding-left: 5%;
+
+      h2 {
+        font-family: $font-family-title;
+        font-weight: bold;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+        font-size: 42px;
+
         span {
-          font-size: 40px;
+          display: block;
+          font-size: 60px;
         }
       }
+
 
       .vmb-slide {
         display: flex;
         flex-direction: column;
         flex-basis: 0;
         font-size: 22px;
-        margin: 10px 0;
+        margin: 40px 0;
         padding: 0;
 
-        .section-check {
-          width: 32px;
-          margin-right: 10px;
+        .col-md-12 {
+          padding-left: 0;
+
+          h4 {
+            font-family: $font-family-title;
+            font-weight: bold;
+            background: $gradient-color-webkit;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            font-size: 32px;
+            margin: 20px 0px;
+
+            span {
+              font-size: 24px;
+              width: 34px;
+              height: 34px;
+              border: 1px solid black;
+              border-radius: 35px;
+              display: inline-block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 15px;
+              padding-top: 2px;
+            }
+          }
+
+          p {
+            margin-right: 20%;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.5;
+            color: $text-blue-color;
+            font-family: $font-family;
+          }
         }
       }
     }
 
     .vmb-image-wrapper {
       padding: 50px;
-      padding-left: 10%;
+      padding-left: 12%;
       background: linear-gradient(to bottom, #ffffff, 10%, #e3f5f6);
       border-bottom-right-radius: 60px;
     }
@@ -1416,70 +1655,7 @@ Boxes CSS
         };
     }
 }
-.single-box {
-    padding: 40px 34px;
-    position: relative;
-    z-index: 1;
-    border-radius: 30px;
-    background: $white-color;
-    -webkit-box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
-    box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
-    -webkit-transition: $transition;
-    transition: $transition;
 
-    .icon {
-        display: inline-block;
-        text-align: center;
-        width: 80px;
-        height: 80px;
-        line-height: 55px;
-        color: #fff;
-        -webkit-transition: $transition;
-        transition: $transition;
-    }
-    h3 {
-        font-size: 48px;
-        margin-top: 10px;
-        margin-bottom: 11px;
-        -webkit-transition: $transition;
-        transition: $transition;
-
-        span {
-          font-size: 32px;
-        }
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        border-radius: 5px;
-        height: 100%;
-        z-index: -1;
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transition: $transition;
-        transition: $transition;
-    }
-    p {
-        -webkit-transition: $transition;
-        transition: $transition;
-        font-size: 1rem;
-        min-height: 130px;
-        text-align: justify;
-    }
-    &:hover {
-        -webkit-transform: translateY(-9px);
-        transform: translateY(-9px);
-        border-color: transparent;
-
-        &::before {
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-}
 
 /*================================================
 About CSS
@@ -5934,7 +6110,7 @@ Repair Why Choose Us CSS
             right: 0;
             z-index: -1;
             bottom: 0;
-            background: $gradient-color2;
+            background: $gradient-color;
             border-radius: 50%;
             margin: 6px;
             -webkit-transition: $transition;
@@ -6509,7 +6685,8 @@ Footer CSS
     }
     h3 {
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        color: #cdd4dc;
     }
     ul {
         padding: 0;
@@ -6640,8 +6817,8 @@ Go Top CSS
     cursor: pointer;
     bottom: 30px;
     right: 0;
-    color: $white-color;
-    background-color: $purple-color;
+    color: #fff;
+    background-color: #294B6D;
     z-index: 1;
     width: 45px;
     text-align: center;
@@ -6652,8 +6829,7 @@ Go Top CSS
     transition: $transition;
 
     &:hover {
-        color: $white-color;
-        background: $light-green-color;
+      background-color: #197089;
     }
 }
 
