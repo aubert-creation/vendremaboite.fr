@@ -11,30 +11,38 @@ const Section4 = (props) => {
               <div className="col-md-6 offset-md-3 m-t-60"><h2>4 champs d'action, pour une offre <span>sur mesure</span></h2></div>
               <div className="vmb-dossier-container">
                 <div className="vmb-dossier-row">
-                  <div className="vmb-dossier-item">
+                  <div className="vmb-dossier-item vmb-dossier-item-1">
                     <div className="vmb-dossier-item-content">
-                      <h3>Administratif</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</p>
+                      <div className="vmb-dossier-item-title">
+                        <h3>Administratif</h3>
+                      </div>
+                      <div className="vmb-dossier-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</div>
                     </div>
                   </div>
-                  <div className="vmb-dossier-item">
+                  <div className="vmb-dossier-item vmb-dossier-item-2">
                     <div className="vmb-dossier-item-content">
-                      <h3>Négociation</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</p>
+                      <div className="vmb-dossier-item-title">
+                        <h3>Négociation</h3>
+                      </div>
+                      <div className="vmb-dossier-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</div>
                     </div>
                   </div>
                 </div>
                 <div className="vmb-dossier-row">
-                  <div className="vmb-dossier-item">
+                  <div className="vmb-dossier-item vmb-dossier-item-3">
                     <div className="vmb-dossier-item-content">
-                      <h3>Financier</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</p>
+                      <div className="vmb-dossier-item-title">
+                        <h3>Financier</h3>
+                      </div>
+                      <div className="vmb-dossier-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</div>
                     </div>
                   </div>
-                  <div className="vmb-dossier-item">
+                  <div className="vmb-dossier-item vmb-dossier-item-4">
                     <div className="vmb-dossier-item-content">
-                      <h3>Visibilité</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</p>
+                      <div className="vmb-dossier-item-title">
+                        <h3>Visibilité</h3>
+                      </div>
+                      <div className="vmb-dossier-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sed do eiusmod tempor incididunt.</div>
                     </div>
                   </div>
                 </div>
