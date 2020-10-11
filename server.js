@@ -70,7 +70,7 @@ app.prepare().then(() => {
        return fs.createReadStream(logs).pipe(res);
     })
 
-    const PORT = process.env.PORT || 3010;
+    const PORT = process.env.PORT || 3000;
 
     server.listen(PORT, (err) => {
         if (err) throw err
