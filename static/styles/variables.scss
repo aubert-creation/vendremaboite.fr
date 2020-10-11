@@ -1,0 +1,37 @@
+
+$font-family: 'Gotham-Book', 'Poppins', sans-serif;
+$font-family-title: 'Gotham-Medium', 'Poppins', sans-serif;
+$light-green-color: #44ce6f;
+$white-color: #ffffff;
+$black-color: #0e314c;
+$paragraph-color: #6084a4;
+$purple-color: #c679e3;
+$bg-color: #f7fafd;
+$bg-color2: #f9f6f6;
+$bg-color3: #f9fafb;
+$bg-color4: #0f054b;
+$hosting-main-color: #032b8d;
+$gradient-color: linear-gradient(to right, #294B6D, 65%, #1B718A);
+$gradient-color-webkit: -webkit-linear-gradient(0deg, #294B6D 0%, #1B718A 100%);
+
+$transition: .5s;
+$font-size: 14px;
+
+$primary-color: #294568;
+$primary-color-bg: #294568;
+
+$title-blue-color: #294568;
+$text-blue-color: #21516A;
+
+
+
+/** RESPONSIVE **/
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 767px;
+$value_two: 768px;
+$value_three: 991px;
+$value_four: 992px;
+$value_five: 1199px;
+$value_six: 1550px;

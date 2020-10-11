@@ -1,0 +1,114 @@
+@import 'variables';
+
+/*================================================
+Section2 CSS
+=================================================*/
+
+.section2 {
+  margin-top: 80px;
+
+  .row {
+    margin: 0!important;
+  }
+
+  .vmb-wrapper {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    .vmb-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 40px;
+      padding-left: 5%;
+
+      h3 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font-family-title;
+        font-weight: bold;
+
+        span {
+          font-size: 3.5rem;
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-basis: 0;
+        font-size: 1.5rem;
+        margin: 10px 0;
+        padding: 0;
+        color: $text-blue-color;
+
+        .section-check {
+          width: 32px;
+          margin-right: 10px;
+        }
+
+        b {
+          font-family: $font-family-title;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .vmb-image-wrapper {
+      padding: 0;
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .vmb-image {
+        animation-name: fadeInRight;
+        visibility: visible;
+        animation-delay: 0.4s;
+        box-shadow: #ebf7f9 -25px 30px 0px 10px;
+        border-radius: 40px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 1550px) {
+
+}
+
+@media only screen and (max-width : 1199px) {
+  .section2 .vmb-wrapper .vmb-image-wrapper .vmb-image {
+    box-shadow: #ebf7f9 -15px 20px 0px 8px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .section2 .vmb-wrapper .vmb-image-wrapper .vmb-image {
+    box-shadow: #ebf7f9 -10px 15px 0px 5px;
+    border-radius: 20px;
+  }
+
+  .section2 .vmb-wrapper .vmb-body div .section-check {
+    width: 26px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .section2 .vmb-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section2 .vmb-wrapper .vmb-body div .section-check {
+    width: 22px;
+  }
+}

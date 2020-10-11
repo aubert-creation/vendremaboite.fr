@@ -1,0 +1,164 @@
+@import 'variables';
+
+/*================================================
+Section2 CSS
+=================================================*/
+
+
+
+.section4 {
+  h2 {
+    text-align: center;
+    font-family: $font-family-title;
+    background: $gradient-color-webkit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $font-family-title;
+    background: $gradient-color-webkit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .vmb-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    .vmb-line {
+      display: flex;
+      .vmb-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        flex: 1;
+        position: relative;
+        height: 24vw;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .vmb-cell-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #fff;
+          flex: 1;
+          height: 100%;
+          justify-content: center;
+          background-color: #2a4b6da3;
+          font-family: $font-family-title;
+          font-weight: bold;
+          font-size: 1.8rem;
+
+          .vmb-cell-title-icon {
+            border: 2px solid #fff;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: $font-family;
+            font-weight: normal;
+
+            span {
+              margin-top: 5px;
+            }
+          }
+          .vmb-cell-title-text {
+
+          }
+        }
+
+        .vmb-cell-hidden {
+          position: absolute;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+          padding: 0 20%;
+          color: #fff;
+          background-color: #2a4b6d;
+          opacity: 0;
+          transition: opacity 400ms ease-in;
+
+          img {
+            width: 10%;
+            margin-bottom: 10px;
+          }
+
+          .vmb-cell-hidden-title {
+            font-family: $font-family-title;
+            font-weight: bold;
+            font-size: 2rem;
+            text-shadow: #2f7d96 2px 2px;
+          }
+
+          .vmb-cell-hidden-text {
+            font-family: $font-family;
+            text-align: justify;
+            font-size: 1.3rem;
+          }
+        }
+
+        &:hover {
+          .vmb-cell-hidden {
+            opacity: 1;
+            transition: opacity 400ms ease-in;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 1550px) {
+
+}
+
+@media only screen and (max-width : 1199px) {
+  .section4 .vmb-wrapper .vmb-line .vmb-cell .vmb-cell-hidden {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .section4 .vmb-wrapper .vmb-line .vmb-cell {
+    height: 28vw;
+  }
+
+  .section4 .vmb-wrapper .vmb-line .vmb-cell .vmb-cell-hidden img {
+    width: 6%;
+    margin-bottom: 5px;
+  }
+
+  .section4 .vmb-wrapper .vmb-line .vmb-cell .vmb-cell-hidden {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .section4 .vmb-wrapper .vmb-line {
+    flex-direction: column;
+  }
+
+  .section4 .vmb-wrapper .vmb-line .vmb-cell {
+    height: 42vw;
+    border: none!important;
+    margin: 1px 0px;
+  }
+}

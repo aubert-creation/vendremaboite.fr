@@ -31,8 +31,9 @@ app.prepare().then(() => {
     });
 
     server.post('/api/contact', (req, res) => {
-        const { name, email, phone, subject, text } = req.body;
-        mailer({name, email, phone, subject, text}).then(() => {
+        console.log('API CONTACT', req.body)
+        const { phone } = req.body;
+        mailer({phone}).then(() => {
             res.send('success')
         }).catch(error => {
             res.status(422).send(error)
@@ -69,7 +70,7 @@ app.prepare().then(() => {
        return fs.createReadStream(logs).pipe(res);
     })
 
-    const PORT = process.env.PORT || 3000;
+    const PORT = process.env.PORT || 3010;
 
     server.listen(PORT, (err) => {
         if (err) throw err

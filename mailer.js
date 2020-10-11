@@ -1,37 +1,26 @@
 const nodemailer = require('nodemailer')
-const sgTransport = require('nodemailer-sendgrid-transport')
 
-const transporter = nodemailer.createTransport(sgTransport({
-    auth: {
-      api_key: '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'
-    }
-}))
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'vmbcontactbot@gmail.com',
+    pass: 'cycsyH-cyrwan-9cojti'
+  }
+});
 
-const send = ({ name, email, phone, subject, text }) => {
+const send = ({ phone }) => {
+  var mailOptions = {
+    from: 'vmbcontactbot@gmail.com',
+    to: 'hermann@vendremaboite.fr',
+    subject: 'Demande de Contact | vendremaboite.fr',
+    text: 'Téléphone: ' + phone
+  };
 
-    const textBody = `Name: ${name}   
-                Subject: ${subject}             
-                Email: ${email}
-                Phone: ${phone}
-                Body: ${text}
-                This email came from StartP React.js & Next.js template
-                `
-
-    const from = name && email ? `${name} <${email}>` : `${name || email}`
-
-    const message = {
-        from,
-        to: 'shabbir@salahsoftwaresolution.com',
-        subject: subject,
-        text: textBody,
-        replyTo: from
-    }
-
-    return new Promise((resolve, reject) => {
-        transporter.sendMail(message, (error, info) =>
-            error ? reject(error) : resolve(info)
-        )
-    })
+  return new Promise((resolve, reject) => {
+      transporter.sendMail(mailOptions, (error, info) =>
+          error ? reject(error) : resolve(info)
+      )
+  })
 }
 
 module.exports = send

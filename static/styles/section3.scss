@@ -1,0 +1,266 @@
+@import 'variables';
+
+/*================================================
+Section3 CSS
+=================================================*/
+
+.section3 {
+  padding: 20px 0px;
+  margin-bottom: 80px;
+  .container {
+    .row {
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+
+      h2 {
+        font-family: $font-family-title;
+        font-weight: bold;
+        background: $gradient-color-webkit;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 3rem;
+
+        span {
+          font-size: 3.5rem;
+        }
+      }
+
+      div {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 1.2rem;
+          text-align: justify;
+          text-align-last: center;
+          line-height: 1.5;
+          color: $text-blue-color;
+        }
+      }
+
+      .vmb-image-wrapper {
+        position: relative;
+
+        .vmb-step {
+          width: 250px;
+          position: absolute;
+
+          &.vmb-step1 {
+            top: 100px;
+            left: 10%;
+          }
+
+          &.vmb-step2 {
+            flex-direction: column-reverse;
+            bottom: -35px;
+            left: 35%;
+
+            .vmb-step-info {
+              margin-top: 10px;
+            }
+
+            .vmb-buble-icon {
+              bottom: -35px;
+              width: 60px;
+            }
+          }
+
+          &.vmb-step3 {
+            top: 15px;
+            left: 53.5%;
+          }
+
+          &.vmb-step4 {
+            flex-direction: column-reverse;
+            bottom: 10px;
+            right: 0%;
+
+            .vmb-step-info {
+              margin-top: 10px;
+            }
+
+            .vmb-buble-icon {
+              top: 75px;
+              bottom: -95px;
+              width: 60px;
+            }
+          }
+
+          .vmb-step-title {
+            color: #548292;
+            font-size: 1.4rem;
+          }
+
+          .vmb-step-desc {
+            text-align: center;
+            color: #21516A;
+            font-size: 0.9rem;
+
+            b {
+              font-family: $font-family-title;
+              font-weight: bold;
+            }
+          }
+
+          .vmb-bubble-wrapper {
+            width: 100px;
+            position: relative;
+            margin-top: 20px;
+
+            .vmb-bubble {
+
+            }
+
+            .vmb-buble-icon {
+              position: absolute;
+              top: 15px;
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 1599px) {
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step1 {
+    top: 5%;
+    left: 9%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step2 {
+    flex-direction: column-reverse;
+    bottom: -15%;
+    left: 33%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step3 {
+    top: -10%;
+    left: 53%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step4 {
+    flex-direction: column-reverse;
+    bottom: -12%;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width : 1199px) {
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step1 {
+    top: -10%;
+    left: 6%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step2 {
+    flex-direction: column-reverse;
+    bottom: -30%;
+    left: 30%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step3 {
+    top: -28%;
+    left: 50%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step4 {
+    flex-direction: column-reverse;
+    bottom: -25%;
+    right: -5%;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .section3 .container .row .vmb-image-wrapper .vmb-step {
+    width: 150px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-bubble-wrapper {
+    margin-top: 15px;
+    width: 70px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-bubble-wrapper .vmb-buble-icon {
+    top: 12px;
+    width: 40px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step2 .vmb-buble-icon {
+    bottom: -26px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step4 .vmb-buble-icon {
+    bottom: -68px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step1 {
+    top: -8%;
+    left: 9%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step2 {
+    flex-direction: column-reverse;
+    bottom: -28%;
+    left: 33%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step3 {
+    top: -25%;
+    left: 52%;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step.vmb-step4 {
+    flex-direction: column-reverse;
+    bottom: -20%;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .section3  {
+    margin-bottom: 0;
+  }
+
+  .section3 .container .row .vmb-image-wrapper {
+    margin-top: 0;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-image {
+    display: none;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step {
+    position: initial;
+    width: 60%;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-step-title {
+    font-size: 1.8rem;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-step-desc {
+    font-size: 1.2rem;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-bubble-wrapper .vmb-bubble {
+    display: none;
+  }
+
+  .section3 .container .row .vmb-image-wrapper .vmb-step .vmb-bubble-wrapper .vmb-buble-icon {
+    position: initial;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #548292;
+    border-radius: 50%;
+  }
+
+}
