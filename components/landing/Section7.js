@@ -53,7 +53,7 @@ const Section7 = (props) => {
               </div>
             </div>
             {success &&
-              <div className="vmb-contact-button-success">Numéro envoyé avec succes</div>
+              <div className="vmb-contact-button-success">Numéro envoyé avec succès</div>
             }
             {!success &&
               <div className={`vmb-contact-button-container ${contact ? 'vmb-contact-button-on' : '' } `}>

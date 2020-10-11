@@ -28,7 +28,7 @@ class MyApp extends App {
           <Container>
             <DefaultSeo
               title="vendremaboite.fr"
-              description="Vendre sa boite n'aura jamais été aussi simple et rapide."
+              description="Vendre sa boite n'aura jamais été aussi simple"
               openGraph={{
                 type: "website",
                 locale: "fr_FR",
