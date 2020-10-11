@@ -1,0 +1,155 @@
+@import 'variables';
+
+/*================================================
+Section1 CSS
+=================================================*/
+
+.section1 {
+  padding: 20px 0px;
+  .container {
+    .row {
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+
+      .section-header {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          background: $gradient-color-webkit;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: $font-family-title;
+
+          span {
+            font-size: 3.5rem;
+          }
+        }
+        div {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 1.2rem;
+            text-align: justify;
+            text-align-last: center;
+            line-height: 1.5;
+            color: $text-blue-color;
+
+            span {
+              font-family: $font-family-title;
+            }
+          }
+        }
+      }
+
+      .single-box {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+          padding: 40px 34px;
+          position: relative;
+          z-index: 1;
+          border-radius: 30px;
+          background: $white-color;
+          -webkit-box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
+          box-shadow: 4px 4px 10px rgba(72, 69, 224, 0.1);
+          -webkit-transition: $transition;
+          transition: $transition;
+
+          .icon {
+              display: inline-block;
+              text-align: center;
+              width: 92px;
+              height: 92px;
+              line-height: 55px;
+              color: #fff;
+              -webkit-transition: $transition;
+              transition: $transition;
+          }
+          h3 {
+              font-family: $font-family-title;
+              font-weight: bold;
+              font-size: 3.5rem;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              -webkit-transition: $transition;
+              transition: $transition;
+              color: $text-blue-color;
+
+              span {
+                font-size: 28px;
+              }
+          }
+          &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              border-radius: 5px;
+              height: 100%;
+              z-index: -1;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transition: $transition;
+              transition: $transition;
+          }
+          p {
+              -webkit-transition: $transition;
+              transition: $transition;
+              font-size: 0.9rem;
+              min-height: 80px;
+              text-align: center;
+              line-height: 1.6;
+              margin-top: 10px;
+              color: $text-blue-color;
+          }
+          &:hover {
+              -webkit-transform: translateY(-9px);
+              transform: translateY(-9px);
+              border-color: transparent;
+
+              &::before {
+                  opacity: 1;
+                  visibility: visible;
+              }
+          }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 1550px) {
+
+}
+
+@media only screen and (max-width : 1199px) {
+  .section1 .container .row .single-box p {
+    min-height: 30px;
+  }
+}
+
+@media only screen and (max-width : 991px) {
+  .section1 .container .row .single-box p {
+    min-height: 30px;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .section1 .vmb-card {
+    margin: 40px 20%;
+  }
+
+  .section1 .container .row .single-box p {
+    min-height: 30px;
+  }
+}

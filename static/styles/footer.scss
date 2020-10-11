@@ -1,0 +1,164 @@
+@import 'variables';
+
+/*================================================
+Section7 CSS
+=================================================*/
+
+/*================================================
+Footer CSS
+=================================================*/
+.footer-area {
+    padding: 80px 10%;
+    position: relative;
+    z-index: 1;
+
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .footer-contact-info {
+      color: #fff;
+    }
+}
+
+
+.single-footer-widget {
+    .logo {
+        margin-bottom: 20px;
+
+        a {
+            display: inline-block;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #cdd4dc;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        &.list {
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: #cdd4dc;
+                        padding-left: 7px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &.footer-contact-info {
+            margin-bottom: 20px;
+
+            li {
+                position: relative;
+                color: #fff;
+                margin-bottom: 8px;
+                padding-left: 25px;
+
+                svg {
+                    position: absolute;
+                    left: 0;
+                    width: 15px;
+                    top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: #cdd4dc;
+                    }
+                }
+            }
+        }
+        &.social-links {
+            li {
+                display: inline-block;
+                margin-right: 5px;
+
+                a {
+                    width: 32px;
+                    text-align: center;
+                    line-height: 27px;
+                    height: 32px;
+                    border: 1px solid $light-green-color;
+                    border-radius: 50%;
+                    color: $light-green-color;
+
+                    svg {
+                        width: 15px;
+                    }
+                    &.facebook {
+                        border-color: #4267b2;
+                        color: #4267b2;
+
+                        &:hover {
+                            background: #4267b2;
+                            color: $white-color;
+                        }
+                    }
+                    &.twitter {
+                        border-color: #38A1F3;
+                        color: #38A1F3;
+
+                        &:hover {
+                            background: #38A1F3;
+                            color: $white-color;
+                        }
+                    }
+                    &.linkedin {
+                        border-color: #0077B5;
+                        color: #0077B5;
+
+                        &:hover {
+                            background: #0077B5;
+                            color: $white-color;
+                        }
+                    }
+                    &.instagram {
+                        border-color: #231F20;
+                        color: #231F20;
+
+                        &:hover {
+                            background: #231F20;
+                            color: $white-color;
+                        }
+                    }
+                    &:hover {
+                        background: $light-green-color;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 1550px) {
+
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+@media only screen and (max-width : 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}

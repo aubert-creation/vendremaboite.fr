@@ -2,6 +2,8 @@ import React from 'react'
 import ReactWOW from 'react-wow'
 import * as Icon from 'react-feather';
 
+import '../../static/styles/section3.scss';
+
 const Section3 = (props) => {
     const steps = [{
       description: <span><b>Nous construison ensemble votre dossier</b> (administratif, financier, juridique)</span>,

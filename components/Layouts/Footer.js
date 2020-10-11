@@ -2,10 +2,17 @@ import React from 'react'
 import Link from 'next/link'
 import * as Icon from 'react-feather'
 
+import '../../static/styles/footer.scss';
+
 export default class Footer extends React.Component {
     render() {
         return (
-            <footer className="footer-area">
+            <footer
+              className="footer-area"
+              style={{
+                backgroundImage: 'url(../../static/images/footer.png)',
+              }}
+            >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
@@ -17,7 +24,6 @@ export default class Footer extends React.Component {
                                         </a>
                                     </Link>
                                 </div>
-                                <p>Vendre sa boite n'aura jamais été aussi simple et rapide.</p>
                             </div>
                         </div>
 
@@ -123,12 +129,6 @@ export default class Footer extends React.Component {
                                         </Link>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-12 col-md-12">
-                            <div className="copyright-area">
-                                <p>Copyright @2020 vendremaboite.fr All rights reserved</p>
                             </div>
                         </div>
                     </div>

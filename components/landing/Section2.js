@@ -2,6 +2,8 @@ import React from 'react'
 import ReactWOW from 'react-wow'
 import * as Icon from 'react-feather';
 
+import '../../static/styles/section2.scss';
+
 const Section2 = (props) => {
 
     return (
