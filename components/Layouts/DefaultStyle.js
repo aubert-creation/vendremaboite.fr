@@ -1,6 +1,5 @@
 import React from 'react'
 import { withRouter } from 'next/router';
-import { connect } from 'react-redux'
 import Link from '../common/ActiveLink'
 import * as Icon from 'react-feather';
 
@@ -29,7 +28,6 @@ class DefaultStyle extends React.Component {
     }
 
     render(){
-        let { products } = this.props;
         const { collapsed } = this.state;
         const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
@@ -96,10 +94,5 @@ class DefaultStyle extends React.Component {
     }
 }
 
-const mapStateToProps = (state)=>{
-    return{
-        products: state.addedItems
-    }
-}
 
-export default withRouter(connect(mapStateToProps)(DefaultStyle))
+export default withRouter(DefaultStyle)
