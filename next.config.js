@@ -11,7 +11,7 @@ module.exports = withPlugins([
         imagesFolder: 'images',
         imagesName: '[name]-[hash].[ext]',
         handleImages: ['jpeg', 'jpg', 'png', 'svg', 'webp', 'gif'],
-        optimizeImages: true,
+        optimizeImages: false,
         optimizeImagesInDev: false,
         mozjpeg: {
             quality: 80,
