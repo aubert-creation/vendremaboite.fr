@@ -75,7 +75,7 @@ const Section7 = (props) => {
                   </div>
 
                   <div className="vmb-contact-button-submit" onClick={() => {onSubmit()}}>
-                    Envoyez
+                    Envoyer
                   </div>
                 </div>
               </div>

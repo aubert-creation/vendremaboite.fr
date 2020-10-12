@@ -45,7 +45,7 @@ const Section4 = (props) => {
                 />
                 <div className="vmb-cell-hidden-title">FINANCIER</div>
                 <div className="vmb-cell-hidden-text">
-                  Le montage du dossier financier peut être complexe varie souvent selon les aptitudent de chaque vendeur. Notre rôle est de nous adapter à vos aptitudes et vous fournir un conseil sur mesure. Nous examinons tous les éléments financiers de la société, y compris les actifs et passifs, les dettes et créances, ainsi que les en cours clients et fournisseurs.
+                  Le montage du dossier financier peut être complexe varie souvent selon les aptitudes de chaque vendeur. Notre rôle est de nous adapter à vos aptitudes et vous fournir un conseil sur mesure. Nous examinons tous les éléments financiers de la société, y compris les actifs et passifs, les dettes et créances, ainsi que les en cours clients et fournisseurs.
                 </div>
               </div>
             </div>
