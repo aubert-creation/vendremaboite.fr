@@ -23,7 +23,7 @@ const Section5 = (props) => {
                 <h2><span>Notre expertise</span> au service de</h2>
                 <div className="col-md-12">
                   <h4><span>></span>Votre commerce</h4>
-                  <p>La vente d’un commerce est singulière. Elle dépend de multiples facteurs. Votre commerce est l’oeuvre d’une vie. Vous la connaissez mieux que personne. Faire en sorte qu’il parte entre bonne main et rapidement, c’est notre mission.</p>
+                  <p>La vente d’un commerce est singulière. Elle dépend de multiples facteurs. Votre commerce est l’oeuvre d’une vie. Vous la connaissez mieux que personne. Faire en sorte qu’il parte entre de bonnes mains et rapidement, c’est notre mission.</p>
                 </div>
               </div>
             </div>

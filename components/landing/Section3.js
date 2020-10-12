@@ -6,7 +6,7 @@ import '../../static/styles/section3.scss';
 
 const Section3 = (props) => {
     const steps = [{
-      description: <span><b>Nous construison ensemble votre dossier</b> (administratif, financier, juridique)</span>,
+      description: <span><b>Nous construisons ensemble votre dossier</b> (administratif, financier, juridique)</span>,
       bubble: 'bubble'
     },{
       description: <span><b>Nous apportons notre expertise pour la valorisation</b> de votre commerce, entreprise, local commercial</span>,
@@ -15,7 +15,7 @@ const Section3 = (props) => {
       description: <span><b>Nous recherchons en toute discretion LE bon acquereur</b> pour finaliser votre vente</span>,
       bubble: 'bubble'
     },{
-      description: <span><b>Nous finalisation du processus de vente</b> et vous apportons <b>les conseils financiers</b> pour la suite...</span>,
+      description: <span><b>Nous finalisons le processus de vente</b> et nous vous apportons <b>les conseils financiers</b> pour la suite...</span>,
       bubble: 'bubble-inv'
     }]
     return (

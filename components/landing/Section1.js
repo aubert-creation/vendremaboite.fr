@@ -26,7 +26,7 @@ const Section1 = () => {
                   </ReactWOW>
                 </div>
                 <h3>30<span>min</span></h3>
-                <p>C’est le temps qu’il nous faudra pour un premier entretient afin de définir vos besoins</p>
+                <p>C’est le temps qu’il nous faudra pour un premier entretien afin de définir vos besoins</p>
               </div>
             </div>
             <div className="vmb-card col-lg-3 col-md-6 col-sm-10 m-b-40">
@@ -68,7 +68,7 @@ const Section1 = () => {
                   </ReactWOW>
                 </div>
                 <h3>120</h3>
-                <p>C’est le temps en minutes, que vous auriez pu consacrer à jour au golf, ou bien d’autres choses</p>
+                <p>C’est le temps en minutes, que vous auriez pu consacrer à jouer au golf, ou bien d’autres choses</p>
               </div>
             </div>
           </div>
