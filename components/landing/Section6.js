@@ -10,8 +10,11 @@ const Section6 = (props) => {
         <div className="vmb-wrapper">
           <div className="vmb-body">
             <div className="vmb-title">
-              <h2><span></span> Nous croyons en la force du réseau, pour concrétiser</h2>
-              <h1>Votre Projet</h1>
+              <h2>Nous croyons en la force du réseau, pour concrétiser</h2>
+              <h1>Votre Projet de cession d’entreprise</h1>
+            </div>
+            <div className="vmb-subtitle">
+              Notre équipe experte, forte de son réseau local, se tiens à votre disposition pour vous accompagner dans la vente de votre  activité en Normandie et en Nouvelle Aquitaine.
             </div>
             <div className="vmb-map-container">
               <ReactWOW delay='0.4s' animation='fadeInDown'>

@@ -49,7 +49,7 @@ const Section7 = (props) => {
                 />
               </ReactWOW>
               <div className="vmb-contact-bulle-text">
-                Laissez-nous votre numéro de téléphone et nous vous contacterons pour une première prise de contact
+                Laissez-nous votre numéro de téléphone et nous vous contacterons en toute discrétion pour comprendre vos besoins
               </div>
             </div>
             {success &&

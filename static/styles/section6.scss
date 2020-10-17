@@ -47,6 +47,16 @@ Section6 CSS
 
       }
 
+      .vmb-subtitle {
+        font-size: 1.2rem;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 1.5;
+        color: $text-blue-color;
+        width: 60%;
+        margin-bottom: 40px;
+      }
+
       .vmb-map-container {
         width: 55%;
         position: relative;
@@ -104,5 +114,15 @@ Section6 CSS
 @media only screen and (max-width: 767px) {
   .section6 .vmb-title {
     padding: 20px 20px;
+  }
+
+  .section6 .vmb-subtitle {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .section6 .vmb-wrapper .vmb-body .vmb-map-container .vmb-map-vignette {
+    border: 2px solid #fff;
+    border-radius: 6px;
   }
 }
