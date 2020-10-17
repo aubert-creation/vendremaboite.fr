@@ -9,13 +9,13 @@ const Section3 = (props) => {
       description: <span><b>Nous construisons ensemble votre dossier</b> (administratif, financier, juridique)</span>,
       bubble: 'bubble'
     },{
-      description: <span><b>Nous apportons notre expertise pour la valorisation</b> de votre commerce, entreprise, local commercial</span>,
+      description: <span><b>Nous apportons notre expertise pour la valorisation</b> et le diagnostique de votre entreprise</span>,
       bubble: 'bubble-short'
     },{
-      description: <span><b>Nous recherchons en toute discretion LE bon acquereur</b> pour finaliser votre vente</span>,
+      description: <span><b>Nous recherchons en toute discretion LE bon acquereur</b></span>,
       bubble: 'bubble'
     },{
-      description: <span><b>Nous finalisons le processus de vente</b> et nous vous apportons <b>les conseils financiers</b> pour la suite...</span>,
+      description: <span><b>Nous finalisons le processus de vente</b> et nous vous apportons <b>les conseils</b> pour la suite...</span>,
       bubble: 'bubble-inv'
     }]
     return (
@@ -25,7 +25,7 @@ const Section3 = (props) => {
             <div className="col-md-12 m-t-60 m-b-30">
               <div className="col-md-8"><h2>Réussir <span>avec succès</span> toutes les étapes qui composent une vente</h2></div>
               <div className="col-md-6 m-b-60 m-t-20">
-                <p>La concrétisation de votre projet peut parfois sembler périlleuse. Organiser le processus de vente de son activité est la clé du succès pour trouver et convaincre votre futur reprenneur en vous démarquant des autres vendeurs</p>
+                <p>La concrétisation de votre projet peut parfois sembler périlleuse. L’anticipation et l’organisation du processus de vente de son activité sont les clés du succès pour trouver et convaincre votre futur repreneur en vous démarquant des autres vendeurs.</p>
               </div>
             </div>
             <div className="col-md-12 m-t-40 m-b-30 vmb-image-wrapper">
