@@ -57,6 +57,20 @@ const Section1 = () => {
                 <p>C’est le temps moyen consacré par un entrepreneur à la bonne préparation de la vente de son entreprise</p>
               </div>
             </div>
+            <div className="vmb-card col-lg-3 col-md-6 col-sm-10 m-b-40">
+              <div className="single-box">
+                <div className="icon">
+                  <ReactWOW delay='0.7s' animation='fadeInDown'>
+                    <img
+                      src={require("../../static/images/section1/golf.png")}
+                      alt="icon golf"
+                    />
+                  </ReactWOW>
+                </div>
+                <h3>2<span>h</span></h3>
+                <p>C’est le temps gagné sur votre vente que vous pourrez consacrer à jour au golf, ou bien d’autres choses…</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

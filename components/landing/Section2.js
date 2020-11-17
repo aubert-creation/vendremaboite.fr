@@ -12,7 +12,7 @@ const Section2 = (props) => {
           <div className="col-md-12 vmb-wrapper">
             <div className="col-md-6 vmb-body">
               <h3>Nous prenons tout en main pour vous <span>accompagner</span></h3>
-              <div>
+              <div className="col-md-12">
                 <ReactWOW delay='0.4s' animation='fadeInLeft'>
                   <img
                       src={require('../../static/images/section2/check.png')}
@@ -20,9 +20,9 @@ const Section2 = (props) => {
                       alt="man"
                   />
                 </ReactWOW>
-                <p>Un premier entretien pour comprendre vos besoins</p>
+                <span>Un premier entretien pour comprendre vos besoins</span>
               </div>
-              <div >
+              <div className="col-md-12">
                 <ReactWOW delay='0.6s' animation='fadeInLeft'>
                   <img
                       src={require('../../static/images/section2/check.png')}
@@ -30,9 +30,9 @@ const Section2 = (props) => {
                       alt="man"
                   />
                 </ReactWOW>
-                <p>Un <b>interlocuteur unique</b> tout au long du Process</p>
+                <span>Un <b>interlocuteur unique</b> tout au long du Process</span>
               </div>
-              <div>
+              <div className="col-md-12">
                 <ReactWOW delay='0.8s' animation='fadeInLeft'>
                   <img
                       src={require('../../static/images/section2/check.png')}
@@ -40,9 +40,9 @@ const Section2 = (props) => {
                       alt="man"
                   />
                 </ReactWOW>
-                <p>Selection active et rigoureuse du<b> bon acquéreur </b></p>
+                <span>Selection active et rigoureuse du<b> bon acquéreur </b></span>
               </div>
-              <div >
+              <div className="col-md-12">
                 <ReactWOW delay='1.0s' animation='fadeInLeft'>
                   <img
                       src={require('../../static/images/section2/check.png')}
@@ -50,9 +50,9 @@ const Section2 = (props) => {
                       alt="man"
                   />
                 </ReactWOW>
-                <p>La négociation de votre affaire pour une vente réussie</p>
+                <span>La négociation de votre affaire pour une vente réussie</span>
               </div>
-              <div>
+              <div className="col-md-12">
                 <ReactWOW delay='1.2s' animation='fadeInLeft'>
                   <img
                       src={require('../../static/images/section2/check.png')}
@@ -60,13 +60,13 @@ const Section2 = (props) => {
                       alt="man"
                   />
                 </ReactWOW>
-                <p><b>Discrétion assurée </b>de la prise de contact jusqu’à la vente finale</p>
+                <span><b>Discrétion assurée </b>de la prise de contact jusqu’à la vente finale</span>
               </div>
             </div>
             <div className="col-md-6 vmb-image-wrapper">
-              <ReactWOW delay='0.4s' animation='fadeIn'>
+              <ReactWOW delay='0.4s' animation='fadeInRight'>
                 <img
-                    src={require('../../static/images/section2/accompagner.jpg')}
+                    src={require('../../static/images/section2/accompagner.png')}
                     className="vmb-image"
                     alt="man"
                 />

@@ -7,6 +7,7 @@ import '../static/styles/main-banner.scss';
 
 // Change based on available styles like pink, brink-pink, purple then remove comment from below import & change based on available colors in static/styles folder
 // import '../static/styles/purple-style.scss';
+import '../static/styles/responsive.scss';
 
 import App, {Container} from 'next/app'
 import { DefaultSeo } from "next-seo";
