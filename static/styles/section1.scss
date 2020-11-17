@@ -145,8 +145,12 @@ Section1 CSS
 }
 
 @media only screen and (max-width : 767px) {
+  .section1 .container .row .section-header div {
+    margin-bottom: 20px;
+  }
+
   .section1 .vmb-card {
-    margin: 40px 20%;
+    margin: 20px 15%;
   }
 
   .section1 .container .row .single-box p {
